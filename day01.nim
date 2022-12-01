@@ -33,8 +33,6 @@ proc part2(elves: seq[seq[int]]) =
 
   echo "part2: ", top3.sum
 
-
-
 if isMainModule:
   let elves = parseFile("day1.txt")
   part1 elves
