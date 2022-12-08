@@ -52,8 +52,8 @@ func getScenicScore(grid: Grid, row, col: int): int =
   var up, left, right, down: int
   let 
     self = grid[row][col]
-    upDown = grid[row]
-    leftRight = collect:
+    leftRight = grid[row]
+    upDown = collect:
       for rw in grid: rw[col]
   for i in countDown(col - 1, 0):
     up += 1
